@@ -84,8 +84,9 @@
     }
     
     .menu-btn {
-      display: none; /* Initially hide the menu button */
+      /* Initially hide the menu button */
       cursor: pointer;
+      
     }
 
     @media screen and (max-width: 600px) {
@@ -97,9 +98,7 @@
         display: none; /* Hide the original links on smaller screens */
       }
 
-      .menu-btn {
-        display: block; /* Show the menu button on smaller screens */
-      }
+      
     }
 
 
@@ -197,7 +196,7 @@
       <input type="text" placeholder="Search...">
       <button type = "button">Search</button>
     </div>
-    <divclass="menu-btn" onclick="toggleMenu()">☰</div>>  
+    <div class="menu-btn" onclick="toggleMenu()">☰</div> 
     </div>
   </nav>
   <script>
