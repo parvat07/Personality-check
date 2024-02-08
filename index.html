@@ -9,36 +9,92 @@
     body {
       background-color: #f5f5dc;
       font-family: 'Arial', sans-serif;
-      margin: 20px
+      margin-top: 70px;
       
     }
 
     header {
-      background-color: #a06bb9;
-      color: white;
+      background-color: #9966a6;;
+      color: rgb(0, 0, 0);
       text-align: center;
       padding: 10px;
+      
     }
 
     nav {
-      background-color: #333;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: #383131;
       overflow: hidden;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      align-items: flex-start;
+      
+      z-index: 1000;
+      
     }
+    nav header{
+      color: #2b311f;
+      padding: 14px;
+    }
+    .nav-content{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 8px;
+    }
+    .left-nav {
+      display: flex;
+
+    }
+    .left-nav a {
+      color: rgb(239, 245, 242);
+      text-align: center;
+      padding: 14px 15px;
+      
+      text-decoration: none;
+      margin-right: 8px;
+     
+    }
+    .left-nav a:hover {
+      background-color: #c8ea7d;
+      color: rgb(9, 9, 9);
+      
+    }
+    .search-container {
+      display: flex;
+      align-items: Right;
+      
+    }
+
+    .search-container input {
+       padding: 5px;
+       margin-right: 5px;
+       margin-top: 5px;
+    }
+
+    .search-container button { 
+       padding: 11px;
+       margin-right: 5px;
+       margin-top: 5px;
+    }
+
+
 
     nav a {
       
       
-      color: white;
+      color: rgb(239, 245, 242);
       text-align: center;
       padding: 14px 16px;
       text-decoration: none;
     }
 
     nav a:hover {
-      background-color: #ddd;
-      color: black;
+      background-color: #c8ea7d;
+      color: rgb(9, 9, 9);
       
     }
 
@@ -48,10 +104,12 @@
 
     h1, h2 {
       color: #4CAF50;
+      text-align: left;
     }
 
     p {
       line-height: 1.6;
+      text-align: left;
     }
 
     #par1 {
@@ -60,6 +118,7 @@
 
     aside {
       font-style: italic;
+      text-align: center;
     }
 
     a.button-container {
@@ -105,12 +164,20 @@
  </head>
 
  <body>
-  <header>Welcome to Personality Test</header>
   <nav>
+  <header>Personality Test</header>
+    <div class = "nav-content">
+    <div class="left-nav">
     <a href="https://parvatbhusal.blogspot.com/2024/01/medical-insurance-cost-prediction.html"> Driver</a> 
     <a href="https://parvatbhusal.blogspot.com/2024/01/initial-digital-model-of-london.html">Expressor</a> 
     <a href="https://parvatbhusal.blogspot.com/2023/05/organizational-analysis-of-mcdonalds.html">Thinker</a>
     <a href="https://parvat07.github.io/set08101/"> Feeler</a>
+   </div>
+    <div class="search-container">
+      <input type="text" placeholder="Search...">
+      <button type = "button">Search</button>
+    </div>  
+    </div>
   </nav>
   <section>
     <h1>Communication Styles</h1>
