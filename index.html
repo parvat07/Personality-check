@@ -3,239 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Personality Test</title>
+</head>
  
-  <style>
-    body {
-      
-      background-color: #f5f5dc;
-      font-family: 'Arial', sans-serif;
-      margin-top: 70px;
-      padding-top: 40px;
-      
-    }
-
-    header {
-      background-color: #9966a6;;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      padding: 10px;
-      
-    }
-
-    nav {
-  
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #383131;
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap; /* Allow the navigation items to wrap to the next line */
-  justify-content: space-between;
-  z-index: 1000;
-}
-
-.nav-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.left-nav {
-  display: flex;
-  flex-wrap: wrap; /* Allow the navigation items to wrap to the next line */
-}
-
-.left-nav a {
-  color: #eff5f2;
-  text-align: center;
-  padding: 1em;
-  text-decoration: none;
-  margin-right: 8px;
-  margin-bottom: 5px; /* Add margin bottom for better spacing */
-}
-.search-container {
-  display: flex;
-  align-items: center; /* Center vertically */
+<body>
+   <header>Personality Test</header>
+ <nav>
+   <div class = "navigation-content">
    
-  margin-top: 10px; /* Add margin for spacing */
-}
-
-.search-container input {
-  padding: 7px;
-  margin-right: 5px;
-  margin-left: 10px;
-  margin-bottom: 5px;
-  width: auto;
-}
-
-.search-container button {
-  padding: 11px;
-  margin-right: 15px;
-  margin-top: 1px;
-  margin-bottom: 5px;
-}
-    
-
-
-
-    nav a {
-      
-      
-      color: rgb(239, 245, 242);
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-
-    nav a:hover {
-      background-color: #c8ea7d;
-      color: rgb(9, 9, 9);
-      
-    }
-    @media all and (max-width: 800px) {
-  .nav-content {
-    flex-direction: column; /* Change direction to column for small screens */
-    align-items: center; /* Center items vertically */
-  }
-
-  .left-nav {
-    width: 100%; /* Take full width in column layout */
-  }
-
-  .left-nav a {
-    margin-right: 0;
-  }
-
-  .search-container {
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    margin-top: 10px; /* Add margin for spacing */
-  }
-
-  .search-container input,
-  .search-container button {
-    margin-right: 0;
-  }
-}
-
-    section {
-      padding: 20px;
-    }
-
-    h1, h2 {
-      color: #4CAF50;
-      text-align: left;
-    }
-
-    p {
-      line-height: 1.6;
-      text-align: left;
-    }
-
-    #par1 {
-      text-decoration: blink;
-      color: red;
-    }
-
-    aside {
-      font-style: italic;
-      text-align: center;
-    }
-
-    a.button-container {
-      display: flex;
-      justify-content: center;
-      background-color: #f5f5dc;
-      padding: 10px;
-      margin-top: 10px;
-    }
-
-    a.button-container img {
-      width: 120px;
-      height: 100px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color:  #f5f5dc;
-      color: rgb(197, 196, 196);
-    }
-
-    .social-icons {
-      background-color:  #f5f5dc;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
-      color: #000;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #ff6f00;
-    }
-  </style>
- </head>
- 
- <body>
-
-  <nav>
-    <header>Personality Test</header>
-    <div class = "nav-content">
-    <div class="left-nav">
-    <a href="https://parvatbhusal.blogspot.com/2024/01/medical-insurance-cost-prediction.html"> Driver</a> 
-    <a href="https://parvatbhusal.blogspot.com/2024/01/initial-digital-model-of-london.html">Expressor</a> 
-    <a href="https://parvatbhusal.blogspot.com/2023/05/organizational-analysis-of-mcdonalds.html">Thinker</a>
-    <a href="https://parvat07.github.io/set08101/"> Feeler</a>
+   <a href="https://parvatbhusal.blogspot.com/2024/01/medical-insurance-cost-prediction.html"> Driver</a> 
+   <a href="https://parvatbhusal.blogspot.com/2024/01/initial-digital-model-of-london.html">Expressor</a> 
+   <a href="https://parvatbhusal.blogspot.com/2023/05/organizational-analysis-of-mcdonalds.html">Thinker</a>
+   <a href="https://parvat07.github.io/set08101/"> Feeler</a>
    </div>
-    <div class="search-container">
-      <input type="text" placeholder="Search...">
-      <button type = "button">Search</button>
-    </div>
-  </nav>
-  <section>
-    <h1>Communication Styles</h1>
-    <p>Most people have a dominant communication style out of the four types. Our ability to communicate and collaborate more successfully with others can be enhanced by learning more about our own dominant style and that of those who are close to us.</p>
-    <h2>So which style are you?</h2>
-    <p>In the upcoming questionnaire please indicate one of the following numbers in the space next to each item. For each of the four choices use all numbers.</p>
-    <p id="par1">** USE EACH NUMBER ONLY ONCE **</p>
-    <p>(READ CAREFULLY)<br/>
-      8 = Most of the time<br/>
-      4 = A lot of the time<br/>
-      2 = Some of the time<br/>
-      1 = Almost never<br/>
-    </p>
-    <aside>You can now start the test by clicking START button!!</aside>
-    <a href="page1.html" target="_blank" class="button-container">
-      <img src="https://www.kindpng.com/picc/m/712-7125334_start-button-pixel-art-hd-png-download.png" alt="Start Button"/>
-    </a>
-  </section>
-  <br/>
-  <footer>
-    <h6>All rights reserved, Follow me through these links;</h6>
-    <div class="social-icons">
-      <a href="https://www.instagram.com/iamnotparvaaat/" target="_blank">
-        <img src="https://th.bing.com/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgAAAA?pid=ImgDet&rs=1" alt="Instagram" width="22" height="22"/>
-      </a>
-      <a href="https://www.facebook.com/parvat.bhusal" target="_blank">
-        <img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19761.png" alt="Facebook" width="22" height="22"/>
-      </a>
-      <a href="https://uk.linkedin.com/in/parvat-bhusal-65b1a4258" target="_blank">
-        <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG39.png" alt="LinkedIn" width="22" height="22"/>
-      </a>
-    </div>
-  </footer>
- 
+   <div class="search-container">
+     <input type="text" placeholder="Search...">
+     <button type = "button">Search</button>
+   </div>
+
+ </nav>
+ <section>
+   <h2>Communication Styles</h2>
+   <p>Most people have a dominant communication style out of the four types. Our ability to communicate and collaborate more successfully with others can be enhanced by learning more about our own dominant style and that of those who are close to us.</p>
+   <h2>So which style are you?</h2>
+   <p>In the upcoming questionnaire please indicate one of the following numbers in the space next to each item. For each of the four choices use all numbers.</p>
+   <p id="par1">** USE EACH NUMBER ONLY ONCE **</p>
+   <p>(READ CAREFULLY)</p>
+     8 = Most of the time<br/>
+     4 = A lot of the time<br/>
+     2 = Some of the time<br/>
+     1 = Almost never<br/>
+   <br/>
+   <aside>You can now start the test by clicking START button!!</aside>
+   <br/>
+   <div class="start-button">
+    <a href="page1.html" target="_blank">Start</a>
+   </div>
+ </section>
+ <br/>
+ <footer>
+   <h6>All rights reserved, Follow me through these links;</h6>
+   <div class="social-icons">
+     <a href="https://www.instagram.com/iamnotparvaaat/" target="_blank">
+       <img src="https://th.bing.com/th/id/OIP.JtmXSh_uyZBaTg1eXd-NtgAAAA?pid=ImgDet&rs=1" alt="Instagram" width="22" height="22"/>
+     </a>
+     <a href="https://www.facebook.com/parvat.bhusal" target="_blank">
+       <img src="https://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19761.png" alt="Facebook" width="22" height="22"/>
+     </a>
+     <a href="https://uk.linkedin.com/in/parvat-bhusal-65b1a4258" target="_blank">
+       <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG39.png" alt="LinkedIn" width="22" height="22"/>
+     </a>
+   </div>
+ </footer>
+ <script src="script.js"></script>
 </body>
 </html>
