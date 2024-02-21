@@ -20,16 +20,35 @@ header {
     transition: top 0.3s;
   }
 
+.upper-paragraph{
+    
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 20px 20px;
+    text-align: justify;
+   
+    justify-content: center;
+    align-items: center;
+}
 
-
+@keyframes fade {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  #par1 {
+    color: red;
+    text-align: justify;
+    animation: fade 1s infinite; 
+  }
 
 .question-container {
     display: flex;
-    width: 100%;
-  
-    padding: 80px 20px 20px;
-    justify-content: flex-start;
-    
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
   
     
     
@@ -38,7 +57,7 @@ header {
   .question {
     font-size: 18px;
     margin-bottom: 10px;
-    justify-content: space-between;
+    text-align: center;
   
   }
 
@@ -65,7 +84,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0 auto; /* Center horizontally */
+   
 
   }    .result-container {
     margin-top: 20px;
