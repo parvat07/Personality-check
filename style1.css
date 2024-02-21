@@ -26,8 +26,8 @@ header {
 .question-container {
     display: flex;
     max-width: 100%;
-   
-    padding: 50px;
+  
+    padding: 80px;
     justify-content: space-between;
     
   
@@ -71,13 +71,6 @@ header {
     margin-top: 20px;
     font-size: 16px;
   }
-
-
-
-
-     
-
-  
 
 
 
