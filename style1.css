@@ -3,32 +3,22 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 
 header {
-    color: rgb(244, 246, 248);
     position: fixed;
+    color: rgb(244, 246, 248);
+    
     font-size: 25px;
     text-align: center;
     width: 100%;
     top: 0;
-    padding: 15.80px;
-    transition: top 0.3s;
+    padding: 10px;
+    
     background-color:#323d32;
+    transition: top 0.3s;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -37,8 +27,9 @@ header {
     display: flex;
     max-width: 100%;
    
-    padding: 20px;
-    justify-content: flex-start;
+    padding: 50px;
+    justify-content: space-between;
+    
   
     
     
@@ -47,6 +38,8 @@ header {
   .question {
     font-size: 18px;
     margin-bottom: 10px;
+    justify-content: space-between;
+  
   }
 
   .answer-input {
@@ -55,7 +48,13 @@ header {
     margin-right: 5px;
     box-sizing: border-box;
   }
-
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
   button {
     display: flex;
     justify-content: center;
@@ -68,10 +67,18 @@ header {
     cursor: pointer;
     margin: 0 auto; /* Center horizontally */
 
-  }    .total {
+  }    .result-container {
     margin-top: 20px;
     font-size: 16px;
   }
+
+
+
+
+     
+
+  
+
 
 
     /* for footer */
