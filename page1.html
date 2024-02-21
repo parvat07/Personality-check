@@ -6,10 +6,25 @@
   <link rel="stylesheet" href="style1.css">
   <title>Personality Test</title>
   </head>
-  <header>Welcome to Personality Test</header>
+  
   <body>
+    <header>Welcome to Personality Test</header>
+    
+    <div class = "upper-paragraph">
+    <p>In the upcoming questionnaire please indicate one of the following numbers in the space next to each item. For each of the four choices use all numbers.</p>
+    <p id="par1">** USE EACH NUMBER ONLY ONCE **</p>
+    <p>(READ CAREFULLY)</p>
+      8 = Most of the time<br/>
+      4 = A lot of the time<br/>
+      2 = Some of the time<br/>
+      1 = Almost never<br/>
+    </div>
+
+    <br/>
     <div class="question-container">
       <div class="question">
+
+        
         
         <p>Q1) When I talk to people:</p>
         <label for="q1a1">Assertive</label>
@@ -164,13 +179,12 @@
         <label for="q11a4">Supportive</label>
         <input type="number" id="q11a4" class="answer-input" placeholder="0">
  
+      <div class="button-container">
+        <button onclick="calculateTotal()">Submit</button>
+        <div class="result-container" id="resultContainer"></div>
       </div>
     </div>
-    <button onclick="calculateTotal()">Submit</button>
-    <div class="total" id="totalResults"></div>
-    
-
-
+    </div>
     <footer>
         <h6>All rights reserved, Follow me through these links;</h6>
         <div class="social-icons">
@@ -185,7 +199,34 @@
           </a>
         </div>
       </footer>
-      <script src="script1.js"></script>
+      <script>
+        
+function calculateTotal() {
+    let totalResults = [0, 0, 0, 0];
+    let maxIndex = 0;
+    for (let i = 1; i <= 11; i++) {
+      for (let j = 1; j <= 4; j++) {
+        const answer = parseInt(document.getElementById(`q${i}a${j}`).value) || 0;
+        totalResults[j - 1] += answer;
+      }
+    }
+    for (let i = 1; i < totalResults.length; i++) {
+        if (totalResults[i] > totalResults[maxIndex]) {
+            maxIndex = i;
+        }
+    }
+
+    const totalResultsText = `
+      Total for Answer 1: ${totalResults[0]}<br>
+      Total for Answer 2: ${totalResults[1]}<br>
+      Total for Answer 3: ${totalResults[2]}<br>
+      Total for Answer 4: ${totalResults[3]}<br/>
+      <strong>Highest Total: Answer ${maxIndex + 1}</strong>
+    `;
+
+    document.getElementById('resultContainer').innerHTML = totalResultsText;
+  }
+   </script>
   </body>
 </html>
     
