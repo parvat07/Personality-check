@@ -15,7 +15,6 @@ header {
     width: 100%;
     top: 0;
     padding: 10px;
-    
     background-color:#323d32;
     transition: top 0.3s;
   }
@@ -26,7 +25,6 @@ header {
     margin: 0 auto;
     padding: 80px 20px 20px;
     text-align: justify;
-   
     justify-content: center;
     align-items: center;
 }
