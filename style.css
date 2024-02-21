@@ -6,11 +6,42 @@ body {
 }
 
 .navigation-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+nav {
+  display: flex ;
+  justify-content: space-between;
+  background-color: rgba(228, 238, 208, 0.907);
+  
+  font-size: 15px;
+  padding-top: 10px;
+
+}
+
+nav a {
+ 
+  color: rgb(13, 14, 14);
+ 
+ justify-content: space-between;
+  padding: 5px 15px;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  background-color:  #568c80c7;
+  color: rgb(9, 9, 9);
+}
+@media screen and (max-width: 768px) {
+  nav a {
+    display: flex; /* Change flex direction to column for smaller screens */
+    /* Align items in the center vertically */
+  }
 }
 
 .search-container {
@@ -38,28 +69,6 @@ header {
     background-color:#323d32;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(228, 238, 208, 0.907);
-    padding-top: 10px;
-    padding-bottom:1px;
-   
-
-}
-
-nav a {
-    color: rgb(13, 14, 14);
-    text-align: center;
-    padding: 5px 10px;
-    text-decoration: none;
-    
-}
-
-nav a:hover {
-    background-color:  #568c80c7;
-    color: rgb(9, 9, 9);
-}
 
 /* Add some padding to the body to prevent content from being hidden behind the fixed header */
 body {
