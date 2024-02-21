@@ -5,6 +5,18 @@ body {
     padding: 0;
 }
 
+header {
+  color: rgb(244, 246, 248);
+  position: fixed;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  padding: 15.80px;
+  transition: top 0.3s;
+  background-color:#323d32;
+}
+
 .navigation-container {
   display: flex;
   justify-content: space-between;
@@ -17,7 +29,6 @@ nav {
   display: flex ;
   justify-content: space-between;
   background-color: rgba(228, 238, 208, 0.907);
-  
   font-size: 15px;
   padding-top: 10px;
 
@@ -26,8 +37,7 @@ nav {
 nav a {
  
   color: rgb(13, 14, 14);
- 
- justify-content: space-between;
+  justify-content: space-between;
   padding: 5px 15px;
   text-decoration: none;
   
@@ -37,16 +47,10 @@ nav a:hover {
   background-color:  #568c80c7;
   color: rgb(9, 9, 9);
 }
-@media screen and (max-width: 768px) {
-  nav a {
-    display: flex; /* Change flex direction to column for smaller screens */
-    /* Align items in the center vertically */
-  }
-}
 
 .search-container {
     
-    display: flex;
+    
     margin-bottom: 5px;
 }
 
@@ -57,17 +61,17 @@ nav a:hover {
     margin-right: 5px;
   }
 
-header {
-    color: rgb(244, 246, 248);
-    position: fixed;
-    font-size: 25px;
-    text-align: center;
-    width: 100%;
-    top: 0;
-    padding: 15.80px;
-    transition: top 0.3s;
-    background-color:#323d32;
-}
+  @media screen and (max-width: 568px) {
+    nav a {
+      display: flex; 
+      
+      
+    }
+    .search-container{
+      display: flex;
+     
+    }
+  }
 
 
 /* Add some padding to the body to prevent content from being hidden behind the fixed header */
