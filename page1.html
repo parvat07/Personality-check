@@ -27,8 +27,8 @@
     <section>
     <div class = "upper-paragraph">
     <p>In the upcoming questionnaire please indicate one of the following numbers in the space next to each item. For each of the four choices use all numbers.</p>
-    <p id="par1">** USE EACH NUMBER ONLY ONCE **</p>
-    <p>(READ CAREFULLY)</p>
+    
+    <p id="par1">(READ CAREFULLY)</p>
       8 = Most of the time<br/>
       4 = A lot of the time<br/>
       2 = Some of the time<br/>
@@ -40,10 +40,11 @@
         Others see me as: <br/>
         <p><b>Assertive [ 2 ] Thorough [ 8 ] Creative [ 1 ] Supportive [ 4 ]</b></pp>
       </p>
-
-    <p>Think about yourself when you are communicating with other:
+<br/>
+    <p>Think about yourself when you are communicating with other:</p>
     </div>
     
+    <p id="par2">** USE EACH NUMBER ONLY ONCE **</p>
     
     <br/>
     <div class="question-container">
@@ -63,7 +64,9 @@
         <br/>
         <label for="q1a4">Supportive</label>
         <input type="number" id="q1a4" class="answer-input" placeholder="0"><br/>
-        <br/>
+
+       <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q2) When i am communicating with others, I am:</p>
 
         <label for="q2a1"> Direct </label>
@@ -76,8 +79,10 @@
         <input type="number" id="q2a3" class="answer-input" placeholder="0">
         <br/>
         <label for="q2a4"> Collaborative </label>
-        <input type="number" id="q2a4" class="answer-input" placeholder="0">
-        <br/>
+        <input type="number" id="q2a4" class="answer-input" placeholder="0"><br/>
+        
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+        
         <p>Q3) When i am communicating with others, I act:</p>
         
         <label for="q3a1">Quickly</label>
@@ -92,6 +97,9 @@
         <label for="q3a4">Considerately </label>
         <input type="number" id="q3a4" class="answer-input" placeholder="0">
         <br/>
+
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q4) When i am communicating with others, I want:</p>
 
         <label for="q4a1">Control </label>
@@ -106,6 +114,8 @@
         <label for="q4a4">Stability</label>
         <input type="number" id="q4a4" class="answer-input" placeholder="0">
         <br/>
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q5) When i am communicating with others, I focus on:</p>
 
         <label for="q5a1">Facts</label>
@@ -120,6 +130,9 @@
         <label for="q5a4">Feelings</label>
         <input type="number" id="q5a4" class="answer-input" placeholder="0">
         <br/>
+
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q6) When i am communicating with others, I :</p>
 
         <label for="q6a1">Drive Change</label>
@@ -134,6 +147,9 @@
         <label for="q6a4">Resist Change</label>
         <input type="number" id="q6a4" class="answer-input" placeholder="0">
         <br/>
+
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q7) When i am communicating with others, I value:</p>
 
         <label for="q7a1">Results</label>
@@ -148,6 +164,8 @@
         <label for="q7a4">Teamwork</label>
         <input type="number" id="q7a4" class="answer-input" placeholder="0">
         <br/>
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q8) When i am communicating with others, I use:</p>
 
         <label for="q8a1">Lists</label>
@@ -162,6 +180,8 @@
         <label for="q8a4">Personal Reports</label>
         <input type="number" id="q8a4" class="answer-input" placeholder="0">
         <br/>
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q9) When i am communicating with others, I want to be:</p>
 
         <label for="q9a1">Precise</label>
@@ -176,6 +196,8 @@
         <label for="q9a4">Trustworthy</label>
         <input type="number" id="q9a4" class="answer-input" placeholder="0">
         <br/>
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q10) When i am communicating with others, I tend to:</p>
 
         <label for="q10a1">Make Statement</label>
@@ -190,6 +212,8 @@
         <label for="q10a4">Discuss</label>
         <input type="number" id="q10a4" class="answer-input" placeholder="0">
         <br/>
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
         <p>Q11) When i am communicating with others, I want to:</p>
 
         <label for="q11a1">Get it done </label>
@@ -204,6 +228,8 @@
         <label for="q11a4">Include everyone</label>
         <input type="number" id="q11a4" class="answer-input" placeholder="0">
         <br/>
+        <p id ="par3" > (8 = Most of the time, 4 = A lot of the time, 2 = Some of the time , 1 = Almost never)</p>
+
       <div class="button-container">
         <button onclick="calculateTotal()">Submit</button>
         <div class="result-container" id="resultContainer"></div>
@@ -229,6 +255,14 @@
         
 function calculateTotal() {
     let totalResults = [0, 0, 0, 0];
+    let categories = ['Drivers', 'Expressers', 'Thinkers', 'Feelers'];
+    let categoryLinks =[
+      'https://parvatbhusal.blogspot.com/2024/01/medical-insurance-cost-prediction.html',
+      'https://parvatbhusal.blogspot.com/2024/01/initial-digital-model-of-london.html',
+      'https://parvatbhusal.blogspot.com/2023/05/organizational-analysis-of-mcdonalds.html',
+      'https://parvat07.github.io/set08101/'
+    
+    ];
     let maxIndex = 0;
     for (let i = 1; i <= 11; i++) {
       for (let j = 1; j <= 4; j++) {
@@ -243,11 +277,11 @@ function calculateTotal() {
     }
 
     const totalResultsText = `
-      Total for Answer 1: ${totalResults[0]}<br>
-      Total for Answer 2: ${totalResults[1]}<br>
-      Total for Answer 3: ${totalResults[2]}<br>
-      Total for Answer 4: ${totalResults[3]}<br/>
-      <strong>Highest Total: Answer ${maxIndex + 1}</strong>
+    Total for ${categories[0]}: ${totalResults[0]}<br>
+      Total for ${categories[1]}: ${totalResults[1]}<br>
+      Total for ${categories[2]}: ${totalResults[2]}<br>
+      Total for ${categories[3]}: ${totalResults[3]}<br/>
+      <strong>Congratulations, you are: <a href="${categoryLinks[maxIndex]}" style="color: green;">${categories[maxIndex]}</a></strong>
     `;
 
     document.getElementById('resultContainer').innerHTML = totalResultsText;

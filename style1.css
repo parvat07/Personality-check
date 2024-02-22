@@ -96,11 +96,22 @@ section {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
   }
-  
   #par1 {
+    color: red;
+    text-align: left;
+    animation: fade 1s infinite; 
+  }
+  #par2 {
     color: red;
     text-align: center;
     animation: fade 1s infinite; 
+  
+  }
+
+  #par3{
+    text-align: justify;
+    font-size: medium;
+    color: #323d32;
   }
 
 .question-container {
