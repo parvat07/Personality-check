@@ -8,10 +8,10 @@
   </head>
   
   <body>
-    <header>Personality Test</header>
+    <header id ="header">Personality Test</header>
     <nav>
       <div class = "navigation-content">
-      
+        <a href = "index.html"> Home</a>
       <a href="https://parvatbhusal.blogspot.com/2024/01/medical-insurance-cost-prediction.html"> Driver</a> 
       <a href="https://parvatbhusal.blogspot.com/2024/01/initial-digital-model-of-london.html">Expressor</a> 
       <a href="https://parvatbhusal.blogspot.com/2023/05/organizational-analysis-of-mcdonalds.html">Thinker</a>
@@ -251,9 +251,9 @@ window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
 
     if (prevScrollPos > currentScrollPos) {
-        document.getElementById("site-header").style.top = "0";
+        document.querySelector("#header").style.top = "0";
     } else {
-        document.getElementById("site-header").style.top = "-60px"; /* Adjust this value based on your header height */
+        document.querySelector("#header").style.top = "-60px"; /* Adjust this value based on your header height */
     }
 
     prevScrollPos = currentScrollPos;
