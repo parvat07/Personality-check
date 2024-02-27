@@ -79,12 +79,24 @@ body {
     padding-top: 60px; /* Adjust the value based on your header height */
 }
 
+#quote-section{
+  text-align: center;
+}
+.quote-container {
+  font-style: italic;
+ 
+}
+
 section {
+
     padding: 15px;
   }
+  
   h2 {
+    
     color: #163b18;
     text-align: left;
+   
   }
 
   /* trying blink with other method as it doesnt support the one*/

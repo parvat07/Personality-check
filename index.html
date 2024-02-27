@@ -23,6 +23,13 @@
    </div>
 
  </nav>
+
+ <section id ="quote-section">
+   <div class = "quote-container">
+    <p id ="quote"></p>
+   </div>
+</section>
+
  <section>
    <h2>Communication Styles</h2>
    <p>Naturally, most people gravitate toward one of the four main communication styles, which affects how they interact with others and express their ideas. Understanding our own and our close associates' styles helps us to unlock the door to more harmonious interpersonal interactions.
@@ -61,20 +68,35 @@
    </div>
  </footer>
  <script>
+
     let prevScrollPos = window.pageYOffset;
 
- window.onscroll = function() {
-     let currentScrollPos = window.pageYOffset;
- 
-     if (prevScrollPos > currentScrollPos) {
-         document.getElementById("header").style.top = "0";
-     } else {
-         document.getElementById("header").style.top = "-60px"; /* Adjust this value based on your header height */
-     }
- 
-     prevScrollPos = currentScrollPos;
- };
- 
+window.onscroll = function() {
+    let currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos > currentScrollPos) {
+        document.querySelector("#header").style.top = "0";
+    } else {
+        document.querySelector("#header").style.top = "-60px"; /* Adjust this value based on your header height */
+    }
+
+    prevScrollPos = currentScrollPos;
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+const quotes = [
+                 '"Believe you can, and you\'re halfway there." - Theodore Roosevelt',
+                  '"The only way to do great work is to love what you do." - Steve Jobs',
+                  '"Happiness is not by chance but by choice." - Jim Rohn'
+                ];
+
+const randomIndex = Math.floor(Math.random() * quotes.length);
+    const quoteElement = document.getElementById('quote');
+
+    if (quoteElement) {
+      quoteElement.textContent = quotes[randomIndex];
+    }
+  });
  </script>
 </body>
 </html>

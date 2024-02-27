@@ -21,9 +21,8 @@
         <input type="text" placeholder="Search...">
         <button type="button">Search</button>
       </div>
-    
-   
     </nav>
+
     <section>
     <div class = "upper-paragraph">
     <p>In the upcoming questionnaire please indicate one of the following numbers in the space next to each item. For each of the four choices use all numbers.</p>
@@ -294,9 +293,11 @@ window.onscroll = function() {
 
     if (prevScrollPos > currentScrollPos) {
         document.querySelector("#header").style.top = "0";
+  
     } else {
         document.querySelector("#header").style.top = "-60px"; /* Adjust this value based on your header height */
-    }
+
+      }
 
     prevScrollPos = currentScrollPos;
 };
