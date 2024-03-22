@@ -145,6 +145,11 @@ section {
 
 }
 
+#google-element{
+  display: flex;
+  justify-content: center;
+}
+
 
   footer {
     text-align: center;
