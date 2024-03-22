@@ -138,7 +138,12 @@ section {
 }
 
   /* for footer */
+.time-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
 
+}
   footer {
     text-align: center;
     padding: 10px;

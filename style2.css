@@ -84,7 +84,13 @@ header {
   
         padding: 20px;
       }
-
+      
+      .time-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+      
+      }
 
           /* for footer */
 
